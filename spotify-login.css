@@ -1,0 +1,210 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.841), black);
+  text-align: center;
+  font-family: helvetica;
+}
+#main {
+  border: 0px solid black;
+  width: calc(100% - 51%);
+  height: auto;
+  background: linear-gradient(black, rgba(0, 0, 0, 0.841));
+  margin: 2.22% 50% 0 25.5%;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0 0 32px;
+  color: white;
+}
+/* Spotify logo */
+#music img {
+  width: 36px;
+  padding: 32px 0 12px;
+}
+#music {
+  margin: 0 0 32px;
+}
+/* Login via Google, FB, Apple */
+.topclass {
+  background-color: black;
+  color: white;
+  border: 0.5px solid grey;
+  width: 324px;
+  height: 50px;
+  border-radius: 30px;
+  text-align: center;
+  margin: 0 0 8px 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+}
+.topclass:hover {
+  background-color: none;
+  border: 1px solid white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.topclass:focus{
+  outline: 3px solid white;
+  outline-offset: 2px;
+}
+#google img {
+  float: left;
+  width: 20px;
+  margin-right: 30px;
+}
+#facebook img {
+  float: left;
+  width: 20px;
+  margin-right: 15px;
+}
+#apple img {
+  float: left;
+  width: 20px;
+  margin-left: -25px;
+}
+/* Email / username and Password */
+.form-field {
+  background: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  width: 300px;
+  height: 25px;
+  font-size: 1em;
+}
+.form-field:hover {
+  background-color: none;
+  border: 1px solid white;
+}
+.form-field:focus {
+  outline: 2px solid white;
+}
+/* also for switch */
+.login-fields {
+  text-align: left;
+  margin-left: 190px;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  margin-right: 15px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 1px;
+  bottom: 2px;
+  background-color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px green;
+  outline: 3px solid white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 400px;
+}
+/* Login button */
+.log {
+  border: 1px solid;
+  width: 330px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #1fdf64;
+  font-family: helvetica;
+  color: black;
+  text-align: center;
+  margin-right: 40px;
+}
+.log:hover {
+  cursor: pointer;
+  width: 335px;
+  height: 52px;
+  transform-origin: center;
+}
+.log h4 {
+  font-family: helvetica;
+}
+hr {
+  height: 0.1px;
+  border: none;
+  color: #292929;
+  opacity: 0.4;
+}
+#sign {
+  color: grey;
+}
+/* Anchor tags */
+#forgot{
+  margin-right: 30px;
+}
+.same a {
+  color: white;
+}
+.same a:hover {
+  cursor: pointer;
+  color: #1fdf64;
+}
+#footer {
+  border: 1px solid rgb(7, 7, 7);
+  height: 40px;
+  color: grey;
+  font-size: 12px;
+  background: #121212;
+  padding-top: 3em;
+}
+#footer a {
+  color: grey;
+}
